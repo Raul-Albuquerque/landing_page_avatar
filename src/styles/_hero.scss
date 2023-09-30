@@ -1,0 +1,60 @@
+.hero {
+    height: 90vh;
+    width: 96vw;
+    padding: 4vw 4vw 0 1vw;
+    background-image: url('../../dist/images/bg/bg_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &__links {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+
+            &__link {
+                padding: 30px 10px;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 680px;
+        text-align: center;
+
+        &__branding {
+            img {
+                max-width: 400px;
+                width: 100%;
+                margin-bottom: 80px;
+            }
+        }
+
+        &__options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 60px;
+            max-width: 458px;
+            margin: 0 auto;
+        }
+
+        &__disney {
+            padding-top: 120px;
+
+            img {
+                max-width: 120px;
+                width: 100%;
+                
+                margin: 0 auto;
+            }
+        }
+    }
+}
