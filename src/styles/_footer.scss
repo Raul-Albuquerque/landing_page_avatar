@@ -1,0 +1,25 @@
+.footer {
+    max-height: 100vh;
+    height: 100%;
+    width: 80vw;
+    padding: 3vw;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    &__social__links {
+
+        &__item {
+            display: inline;
+            margin-left: 20px;            
+
+            img {
+                height: 36px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

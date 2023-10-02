@@ -1,7 +1,9 @@
 @use 'variaveis';
 @use 'hero';
-@use 'about2';
+@use 'about';
 @use 'chars';
+@use 'curiosities';
+@use 'footer';
 
 @font-face {
     font-family: TorukSC;
@@ -37,6 +39,10 @@
     @include text;
 }
 
+.text--small {
+    @include text(12px);
+}
+
 .text--bold {
     @include text;
     font-weight: 700;
@@ -45,6 +51,7 @@
 .title--small {
     @include title(16px);
 }
+
 
 .title {
     @include title;
@@ -93,4 +100,22 @@ body {
     &:hover {
         padding: 24px 32px;
     }
+}
+
+.section__division {
+    margin: 60px 0 30px 0;
+    text-align: center;
+
+    &__content {
+        max-width: 100%;
+
+        img {
+            display: inline;
+            height: 32px;
+        }
+    
+        h2 {
+            display: inline;
+        }
+    }    
 }

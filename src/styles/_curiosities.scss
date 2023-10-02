@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+.curiosities {
+    max-height: 100vh;
+    height: 100%;
+    width: 80vw;
+    padding: 3vw;
+    background-image: url('../../dist/images/bg/bg_curiosities.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    &__content {
+        &__item {
+            background-color: variaveis.$bgCuriositieCardColor;
+            margin-bottom: 16px;
+            border-radius: 8px;
+
+            &__curiositie {
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                }
+            }
+
+            &__answer {
+                height: 0;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
+
+                li {
+                    list-style: inside;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &--is-open {
+                .curiosities__content__item__curiositie::after {
+                    content: '-';
+                }
+
+                .curiosities__content__item__answer {
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
+                }
+            }
+        }
+    }
+}

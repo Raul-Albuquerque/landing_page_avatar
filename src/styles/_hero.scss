@@ -1,7 +1,7 @@
 .hero {
-    height: 90vh;
-    width: 96vw;
-    padding: 4vw 4vw 0 1vw;
+    height: 85vh;
+    width: 80vw;
+    padding: 3vw 3vw 1vw 1vw;
     background-image: url('../../dist/images/bg/bg_hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,34 +26,31 @@
     }
 
     &__content {
-        max-width: 680px;
+        max-width: 600px;
         text-align: center;
 
         &__branding {
             img {
-                max-width: 400px;
+                max-width: 300px;
                 width: 100%;
-                margin-bottom: 80px;
+                margin: 80px 0;
             }
         }
 
         &__options {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding-top: 60px;
-            max-width: 458px;
-            margin: 0 auto;
+            justify-content: space-around;
+            padding-top: 40px;
+            width: 100%;
         }
 
         &__disney {
-            padding-top: 120px;
+            padding-top: 80px;
 
             img {
                 max-width: 120px;
                 width: 100%;
-                
-                margin: 0 auto;
             }
         }
     }

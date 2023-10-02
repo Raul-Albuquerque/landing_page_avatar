@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.chars {
+    max-height: 100vh;
+    height: 100%;
+    width: 80vw;
+    padding: 3vw 3vw 3vw 3vw;
+    background-image: url('../../dist/images/bg/bg_chars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 40px;
+
+        &__char {
+            background-color: variaveis.$bgCardCharColor;
+            max-width: 220px;
+            width: 100%;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(105%);
+            }
+
+            hr {
+                background-color: variaveis.$secondaryTextColor;
+                color: variaveis.$secondaryTextColor;
+                border: 1px solid variaveis.$secondaryTextColor;
+            }
+
+            .text,
+            .title--small {
+                color: variaveis.$secondaryTextColor;
+            }
+        }
+    }
+}

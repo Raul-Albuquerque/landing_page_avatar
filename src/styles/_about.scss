@@ -1,0 +1,27 @@
+.about {
+    height: 85vh;
+    width: 80vw;
+    padding: 3vw 3vw 1vw 3vw;
+    background-image: url('../../dist/images/bg/bg_about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 50%;
+
+        img {
+            height: 200px;
+            padding-bottom: 40px;
+        }
+
+        .text {
+            padding-bottom: 16px;
+        }
+    }
+}
