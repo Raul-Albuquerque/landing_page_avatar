@@ -1,5 +1,5 @@
 .hero {
-    height: 85vh;
+    height: 100%;
     width: 80vw;
     padding: 3vw 3vw 1vw 1vw;
     background-image: url('../../dist/images/bg/bg_hero.jpg');
@@ -34,6 +34,14 @@
                 max-width: 300px;
                 width: 100%;
                 margin: 80px 0;
+
+                @media (max-width: 1023px) {
+                    max-width: 300px;
+                }
+
+                @media (max-width: 767px) {
+                    max-width: 200px;
+                }                
             }
         }
 
@@ -43,10 +51,31 @@
             justify-content: space-around;
             padding-top: 40px;
             width: 100%;
+
+            @media (max-width: 1023px) {
+                display: flex;
+            }
+
+            @media (max-width: 767px) {
+                display: block;
+                padding: 20px;
+            }
+
+            &__option {
+                margin: 40px;
+            }
         }
 
         &__disney {
-            padding-top: 80px;
+            padding-top: 0;
+
+            @media (max-width: 1023px) {
+                padding-top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                padding-top: 10px;
+            }
 
             img {
                 max-width: 120px;

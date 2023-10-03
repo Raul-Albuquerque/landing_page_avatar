@@ -59,6 +59,10 @@
 
 .title--big {
     @include title(32px);
+
+    @media (max-width: 767px) {
+        @include title(24px);
+    }
 }
 
 * {
@@ -77,6 +81,10 @@ body {
     @include title(18px);
     text-transform: uppercase;
     padding: 8px;
+
+    @media (max-width: 767px) {
+        @include title(12px);
+    }
     
     &--is-selected {
         border: 3px solid variaveis.$primaryTextColor;
@@ -96,6 +104,12 @@ body {
     background-color: variaveis.$primaryTextColor;
     border: 2px solid variaveis.$secondaryTextColor;
     border-radius: 8px;
+
+    @media (max-width: 767px) {
+        @include title(12px);
+        color: variaveis.$secondaryTextColor;
+        padding: 12px 18px;
+    }
 
     &:hover {
         padding: 24px 32px;

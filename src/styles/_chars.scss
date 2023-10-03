@@ -1,7 +1,6 @@
 @use 'variaveis';
 
 .chars {
-    max-height: 100vh;
     height: 100%;
     width: 80vw;
     padding: 3vw 3vw 3vw 3vw;
@@ -16,6 +15,17 @@
         grid-template-columns: repeat(4, 1fr);
         row-gap: 40px;
 
+        @media (max-width: 1023px) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+
         &__char {
             background-color: variaveis.$bgCardCharColor;
             max-width: 220px;
@@ -23,6 +33,14 @@
             text-align: center;
             border-radius: 8px;
             cursor: pointer;
+
+            @media (max-width: 1023px) {
+                max-width: 100%;
+            }
+            
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }            
 
             &:hover {
                 transform: scale(105%);

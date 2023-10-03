@@ -1,7 +1,6 @@
 @use 'variaveis';
 
 .curiosities {
-    max-height: 100vh;
     height: 100%;
     width: 80vw;
     padding: 3vw;
@@ -16,6 +15,18 @@
             background-color: variaveis.$bgCuriositieCardColor;
             margin-bottom: 16px;
             border-radius: 8px;
+
+            .title {
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+
+            .text {
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
 
             &__curiositie {
                 padding: 24px;
@@ -32,6 +43,12 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
+
+                    @media (max-width: 767px) {
+                        font-size: 20px;
+                        right: 16px;
+                        
+                    }
                 }
             }
 

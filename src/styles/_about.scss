@@ -1,5 +1,5 @@
 .about {
-    height: 85vh;
+    height: 100%;
     width: 80vw;
     padding: 3vw 3vw 1vw 3vw;
     background-image: url('../../dist/images/bg/bg_about.jpg');
@@ -15,13 +15,31 @@
         flex-direction: column;
         padding-left: 50%;
 
+        @media (max-width: 1023px) {
+            padding-left: 50%;
+        }
+
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+
         img {
             height: 200px;
             padding-bottom: 40px;
+
+            @media (max-width: 767px) {
+                height: 160px;
+                padding-bottom: 20px;
+            }
         }
 
         .text {
             padding-bottom: 16px;
+
+            @media (max-width: 767px) {
+                padding-bottom: 8px;
+                font-size: 12px;
+            }
         }
     }
 }
